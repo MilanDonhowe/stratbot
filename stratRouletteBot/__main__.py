@@ -8,4 +8,4 @@ from stratRouletteBot.bot.bot import bot
 
 if __name__ == "__main__":
     print("Running strat bot")
-    bot.run("YOUR-CLIENT-TOKEN-HERE")
+    bot.run("CLIENT-TOKEN-HERE")

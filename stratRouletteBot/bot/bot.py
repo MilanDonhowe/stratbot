@@ -21,4 +21,16 @@ async def on_ready():
 bot.add_cog(Strategies(bot))
 
 
+@bot.event
+async def on_command_error(ctx, err):
+    if (isinstance(err, commands.CommandNotFound)):
+        return
+    if (isinstance(err, commands.MissingRequiredArgument)):
+        return
+    if (isinstance(err, commands.BadArgument)):
+        return
+    raise err
+
+
+
 

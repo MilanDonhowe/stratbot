@@ -23,7 +23,8 @@ async def valid_map(map):
         "cache" : "de_cache",
         "nuke": "de_nuke",
         "office": "de_office",
-        "anubis": "de_anubis"
+        "anubis": "de_anubis",
+        "gen": "gen"
     }
 
     for k in map_key.keys():
@@ -36,11 +37,11 @@ async def valid_map(map):
 async def valid_side(side):
     """determines if a given team is valid and returns associated team key"""
     
-    side = side.strip().upper()
-    if (side in ("T", "CT")):
-        return side
+    f_side = side.strip().upper()
+    if (f_side in ("T", "CT", "TERRORISTS", "COUNTERTERRORISTS")):
+        return f_side
     
-    raise BadArgument(message='team side named {side} (Acceptable team sides are "T" or "CT")')
+    raise BadArgument(message=f'team side named {side} (Acceptable team sides are "T" or "CT")')
 
 
 
