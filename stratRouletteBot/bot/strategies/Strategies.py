@@ -38,7 +38,7 @@ class Strategies(commands.Cog):
 
     @commands.command(
         brief = "--> sends DM to user containing a random strategy.",
-        help = "Sends DM to user containing a random strategy.  For example, the command: \"!strat de_dust2 T\" "\
+        help = "Sends DM to user containing a random strategy.  For example, the command: \"!strat t de_dust2\" "\
         "will result in the bot sending you a personal message with a random strategy for terrorists on dust 2"
     )
     async def strat(self, ctx, side, map="general", pistols_only=False):

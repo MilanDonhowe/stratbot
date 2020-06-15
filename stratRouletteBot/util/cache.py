@@ -5,7 +5,6 @@
 # Description:  Queue data-structure intended to prevent repeat
 #               strategies from being picked as frequently
 #****************************************************************
-import asyncio
 
 class Cache(object):
     def __init__(self, size):
