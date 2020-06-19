@@ -1,1 +1,1 @@
-release: python -m stratRouletteBot
+worker: python -m stratRouletteBot
