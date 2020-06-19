@@ -18,7 +18,7 @@ class Strategies(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         # strat_cache to prevent multiple strats being chosen
-        self.strat_cache = Cache(5)
+        self.strat_cache = Cache(15)
 
     
     async def pick_strategy(self, strategies):
